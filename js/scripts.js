@@ -13,8 +13,6 @@ $('.new_slider_mob_for').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
-    centerMode: true,
-    variableWidth: true,
     speed: 500,
     arrows: false,
     dots: true,
