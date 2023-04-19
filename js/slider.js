@@ -1,26 +1,26 @@
-$('.new_slider_mob_for').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    centerMode: true,
-    variableWidth: true,
-    speed: 500,
-    arrows: false,
-    dots: true,
-    fade: false,
-    asNavFor: '.new_slider_mob_nav'
-});
+// $('.new_slider_mob_for').slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     infinite: true,
+//     centerMode: true,
+//     variableWidth: true,
+//     speed: 500,
+//     arrows: false,
+//     dots: true,
+//     fade: false,
+//     asNavFor: '.new_slider_mob_nav'
+// });
 
-$('.new_slider_mob_nav').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '.new_slider_mob_for',
-    fade: true,
-    infinite: true,
-    arrows: false,
-    dots: false,
-    focusOnSelect: true
-});
+// $('.new_slider_mob_nav').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     asNavFor: '.new_slider_mob_for',
+//     fade: true,
+//     infinite: true,
+//     arrows: false,
+//     dots: false,
+//     focusOnSelect: true
+// });
 
 $('.new_slider_tablet_for').slick({
     slidesToShow: 1,
@@ -74,11 +74,6 @@ $('.new_slider_desk_nav_slider').slick({
 
 var check = 0;
 
-$(window).scroll(function() {
-    if($(".new_slider_desk_title").is(":visible")) {
-        // alert("test");
-    }
-});
 
 $('.new_slider_desk_for').slick('slickPause');
 
