@@ -1,0 +1,295 @@
+.human-and-desk-animation-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.human-and-desk-animation-block video{
+    width: 350px;
+    z-index: 0;
+    transform: translate(50px, -50px);
+}
+
+/* Анимационный блок */
+.human-and-desk-animation {
+    height: 400px;
+    width: 520px;
+    position: relative;
+    transform: scale(0.7);
+    z-index: 1;
+}
+.human-and-desk-animation.active img {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.human-and-desk-animation__desk-block {
+    position: absolute;
+    left: 200px;
+    top: -10px;
+}
+.human-and-desk-animation__human {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 400px;
+    width: auto;
+    z-index: 2;
+}
+.human-and-desk-animation__desk {
+    height: auto;
+    width: 250px;
+    z-index: 1;
+}
+.human-and-desk-animation__line1 {
+    width: 82px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    will-change: animation, left, top, right, bottom;
+    -webkit-animation-name: human-and-desk-animation__line1;
+    animation-name: human-and-desk-animation__line1;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    z-index: -1;
+}
+.human-and-desk-animation__line2 {
+    width: 106px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    will-change: animation, left, top, right, bottom;
+    -webkit-animation-name: human-and-desk-animation__line2;
+    animation-name: human-and-desk-animation__line2;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    z-index: -1;
+}
+.human-and-desk-animation__add-card {
+    width: 60px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    will-change: animation, left, top, right, bottom;
+    -webkit-animation-name: human-and-desk-animation__add-card;
+    animation-name: human-and-desk-animation__add-card;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2.7s;
+    animation-duration: 2.7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    z-index: -1;
+}
+.human-and-desk-animation__user-card {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    will-change: animation, left, top, right, bottom;
+    -webkit-animation-name: human-and-desk-animation__user-card;
+    animation-name: human-and-desk-animation__user-card;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 400ms;
+    animation-delay: 400ms;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    z-index: -1;
+}
+.human-and-desk-animation__search-card {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    will-change: animation, left, top, right, bottom;
+    -webkit-animation-name: human-and-desk-animation__search-card;
+    animation-name: human-and-desk-animation__search-card;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 500ms;
+    animation-delay: 500ms;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    z-index: -1;
+}
+
+@-webkit-keyframes human-and-desk-animation__line1 {
+    100% {
+        left: -28px;
+        bottom: -16px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes human-and-desk-animation__line1 {
+    100% {
+        left: -28px;
+        bottom: -16px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes human-and-desk-animation__line2 {
+    100% {
+        left: -10px;
+        top: -30px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes human-and-desk-animation__line2 {
+    100% {
+        left: -10px;
+        top: -30px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes human-and-desk-animation__add-card {
+    100% {
+        right: -50px;
+        top: 20px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes human-and-desk-animation__add-card {
+    100% {
+        right: -50px;
+        top: 20px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes human-and-desk-animation__user-card {
+    100% {
+        right: -40px;
+        top: -76px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes human-and-desk-animation__user-card {
+    100% {
+        right: -40px;
+        top: -76px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes human-and-desk-animation__search-card {
+    100% {
+        right: -60px;
+        top: 106px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes human-and-desk-animation__search-card {
+    100% {
+        right: -60px;
+        top: 106px;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+.new_design .n_1 .n_1__col_pic_wrap {
+    height: auto !important;
+}
+
+@media (max-width: 1270px) {
+    .human-and-desk-animation {
+        transform: scale(0.6);
+    }
+    .human-and-desk-animation-block video{
+        width: 330px;
+        transform: translate(50px, -30px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .human-and-desk-animation-block video{
+        width: 280px;
+        transform: translate(50px, 20px);
+    }
+}
+
+@media (max-width: 575px) {
+    .human-and-desk-animation {
+        transform: scale(0.5) translateX(-40px);
+    }
+    .human-and-desk-animation-block video{
+        width: 220px;
+        transform: translate(20px, 50px);
+    }
+}
+
+@media (max-width: 375px) {
+    .human-and-desk-animation-block {
+        transform: translateX(-2%);
+    }
+    .human-and-desk-animation {
+        transform: scale(0.3) translateX(-40px);
+    }
+    .human-and-desk-animation-block video{
+        width: 160px;
+        transform: translate(20px, 100px);
+    }
+}
