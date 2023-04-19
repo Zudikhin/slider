@@ -2,6 +2,8 @@ $('.new_slider_mob_for').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
+    centerMode: true,
+    variableWidth: true,
     speed: 500,
     arrows: false,
     dots: true,
@@ -66,7 +68,6 @@ $(document).ready(function() {
   }, 'xml');
 
 });
-
   // slick slider
   $('.company_card_left_slider').slick({ 
     slidesToShow: 1,
