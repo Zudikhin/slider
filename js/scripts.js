@@ -4,9 +4,11 @@ $('.new_slider_mob_for').slick({
     infinite: true,
     centerMode: true,
     variableWidth: true,
-    speed: 1000,
     arrows: false,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed: 1000,
     fade: false,
     asNavFor: '.new_slider_mob_nav'
 });
