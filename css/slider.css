@@ -3,12 +3,13 @@ body {
 }
 
 .new_slider h4 {
-    font-family: 'RF Tone', sans-serif;
-    font-weight: 700;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
     font-size: 24px;
-    line-height: 30px;
-    color: #FFFFFF;
+    line-height: 29px;
     text-align: center;
+    color: #FFFFFF;
 }
 
 .new_slider_desk {
@@ -498,6 +499,7 @@ body {
 .strategy_block_list_item_img span b {
     font-size: 42px;
     line-height: 50px;
+    font-weight: bold;
 }
 
 .strategy_block_list_item_body {
