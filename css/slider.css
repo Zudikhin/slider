@@ -11,19 +11,19 @@ body {
     margin: 0 auto;
 }
 
-.new_slider_mob_for_item {
+/*.new_slider_mob_for_item {
     width: 120px !important;
     display: block !important;
     opacity: 0.3;
     transition: all 0.2s linear;
 }
-
+*/
 .new_slider_mob_for_item img {
     width: 100%;
     transition: all 0.2s linear;
 }
 
-.new_slider_mob_for_item.slick-current {
+/*.new_slider_mob_for_item.slick-current {
     opacity: 1;
     position: relative;
     z-index: 1;
@@ -37,7 +37,7 @@ body {
 
 .new_slider_mob_for .slick-list {
     padding: 100px 50px !important;
-}
+}*/
 
 .new_slider_mob .slick-dots {
     display: flex;
