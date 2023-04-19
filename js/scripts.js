@@ -1,14 +1,3 @@
-document.body.addEventListener("touchstart", function () {
-	var allVideos = document.querySelectorAll('.autoplay');
-	for (var i = 0; i < allVideos.length; i++) allVideos[i].play();
-}, {once: true});
-
-function ShowModal(caption, message) {
-	$('.modal_form_content_titile').text(caption)
-	$('.modal_form_content_text').text(message)
-	$('.modal_form_respone').addClass('show');
-}
-
 $('.new_slider_mob_for').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -30,6 +19,17 @@ $('.new_slider_mob_nav').slick({
     dots: false,
     focusOnSelect: true
 });
+
+document.body.addEventListener("touchstart", function () {
+	var allVideos = document.querySelectorAll('.autoplay');
+	for (var i = 0; i < allVideos.length; i++) allVideos[i].play();
+}, {once: true});
+
+function ShowModal(caption, message) {
+	$('.modal_form_content_titile').text(caption)
+	$('.modal_form_content_text').text(message)
+	$('.modal_form_respone').addClass('show');
+}
 
 $(document).ready(function() {
   // replace tag img to svg element
