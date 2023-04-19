@@ -4,7 +4,7 @@ $('.new_slider_mob_for').slick({
     infinite: true,
     centerMode: true,
     variableWidth: true,
-    speed: 500,
+    speed: 1000,
     arrows: false,
     dots: true,
     fade: false,
