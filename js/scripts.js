@@ -9,6 +9,30 @@ function ShowModal(caption, message) {
 	$('.modal_form_respone').addClass('show');
 }
 
+$('.new_slider_mob_for').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    speed: 500,
+    arrows: false,
+    dots: true,
+    fade: false,
+    asNavFor: '.new_slider_mob_nav'
+});
+
+$('.new_slider_mob_nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.new_slider_mob_for',
+    fade: true,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    focusOnSelect: true
+});
+
 $(document).ready(function() {
   // replace tag img to svg element
   jQuery('img.svg').each(function() {
@@ -43,30 +67,6 @@ $(document).ready(function() {
 
   }, 'xml');
 
-});
-
-  $('.new_slider_mob_for').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    centerMode: true,
-    variableWidth: true,
-    speed: 500,
-    arrows: false,
-    dots: true,
-    fade: false,
-    asNavFor: '.new_slider_mob_nav'
-});
-
-$('.new_slider_mob_nav').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '.new_slider_mob_for',
-    fade: true,
-    infinite: true,
-    arrows: false,
-    dots: false,
-    focusOnSelect: true
 });
 
   // slick slider
