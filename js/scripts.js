@@ -6,9 +6,9 @@ $('.new_slider_mob_for').slick({
     variableWidth: true,
     arrows: false,
     dots: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    speed: 1000,
+    // autoplay: true,
+    // autoplaySpeed: 1500,
+    // speed: 1000,
     fade: false,
     asNavFor: '.new_slider_mob_nav'
 });
