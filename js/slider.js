@@ -1,15 +1,13 @@
-// $('.new_slider_mob_for').slick({
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     infinite: true,
-//     centerMode: true,
-//     variableWidth: true,
-//     speed: 500,
-//     arrows: false,
-//     dots: true,
-//     fade: false,
-//     asNavFor: '.new_slider_mob_nav'
-// });
+$('.new_slider_mob_for').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    speed: 500,
+    arrows: false,
+    dots: true
+});
 
 // $('.new_slider_mob_nav').slick({
 //     slidesToShow: 1,
