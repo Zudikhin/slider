@@ -56,6 +56,12 @@ $('.new_slider_desk_for').slick('slickPause');
 
 $('.new_slider_desk_nav_slider').slick('slickPause');
 
+
+$('.new_slider_mob_for').slick('slickPause');
+
+$('.new_slider_mob_nav').slick('slickPause');
+
+
 const inViewport = (elem) => {
     let allElements = document.getElementsByClassName(elem);
     let windowHeight = window.innerHeight;
@@ -67,12 +73,19 @@ const inViewport = (elem) => {
                 allElements[i].classList.add('animation');  //  add the class
                 $('.new_slider_desk_for').slick('slickPlay');
                 $('.new_slider_desk_nav_slider').slick('slickPlay');
-                if(check == 0) {
-                    $([document.documentElement, document.body]).animate({
-                        scrollTop: $(".new_slider_desk_title").offset().top - 200
-                    }, 1000);
+
+                $('.new_slider_mob_for').slick('slickPlay');
+                $('.new_slider_mob_nav').slick('slickPlay');
+
+                if ($(window).width() > 1199) {
+                    if(check == 0) {
+                        $([document.documentElement, document.body]).animate({
+                            scrollTop: $(".new_slider_desk_title").offset().top - 200
+                        }, 1000);
+                    }
+                    check = 1;
                 }
-                check = 1;
+
             } else{
                 allElements[i].classList.remove('in-viewport');  //  remove the class
             }
@@ -82,7 +95,7 @@ const inViewport = (elem) => {
     window.addEventListener('scroll', elems);
 }
 
-if ($(window).width() > 1199) {
-    inViewport("anime");
-}
+
+inViewport("anime");
+
 
