@@ -30,7 +30,9 @@ $('.new_slider_desk_for').slick({
     autoplaySpeed: 1500,
     fade: true,
     dots: false,
-    asNavFor: '.new_slider_desk_nav_slider'
+    asNavFor: '.new_slider_desk_nav_slider',
+    useCSS: false,
+    useTransform: false
 });
 
 $('.new_slider_desk_nav_slider').slick({
