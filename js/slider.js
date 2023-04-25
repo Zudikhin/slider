@@ -67,7 +67,7 @@ const inViewport = (elem) => {
                 $('.new_slider_desk_nav_slider').slick('slickPlay');
                 if(check == 0) {
                     $([document.documentElement, document.body]).animate({
-                        scrollTop: $(".new_slider_desk_title").offset().top - 300
+                        scrollTop: $(".new_slider_desk_title").offset().top - 200
                     }, 1000);
                 }
                 check = 1;
