@@ -9,7 +9,9 @@ $('.new_slider_mob_for').slick({
     autoplay: true,
     autoplaySpeed: 1500,
     speed: 1000,
+    cssEase: 'linear',
     fade: false,
+    pauseOnHover: true,
     asNavFor: '.new_slider_mob_nav'
 });
 
@@ -20,9 +22,19 @@ $('.new_slider_mob_nav').slick({
     fade: true,
     infinite: true,
     arrows: false,
-    dots: false,
-    focusOnSelect: true
+    dots: false
 });
+
+$('.new_slider_mob').on('mouseenter touchstart', function(){ 
+  $('.new_slider_mob_for').slick('slickPause');
+  $('.new_slider_mob_nav').slick('slickPause');
+});
+
+$('.new_slider_mob').on('mouseleave touchend', function(){
+  $('.new_slider_mob_for').slick('slickPlay');
+  $('.new_slider_mob_nav').slick('slickPlay');
+});
+
 
 document.body.addEventListener("touchstart", function () {
 	var allVideos = document.querySelectorAll('.autoplay');
