@@ -188,7 +188,7 @@ $(document).ready(function() {
   }); 
   // Anchor
   $("a.anchor").click(function(){
-    $('html,body').animate({ scrollTop: $($(this).attr("href")).offset().top -200 }, 'slow','swing');
+    $('html,body').animate({ scrollTop: $($(this).attr("href")).offset().top - 100 }, 'slow','swing');
     return false;
   });  
   $('.n_4 .gsi_button').on('click', function(){ 
