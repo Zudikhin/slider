@@ -22,6 +22,12 @@ body {
 }
 
 
+.new_slider_mob_for {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+}
+
+
 .new_slider_mob_for_item {
     width: 100px !important;
     display: block !important;
