@@ -17,13 +17,13 @@ body {
 }
 
 .new_slider_mob {
-    width: 360px;
+    width: 100%;
     margin: 0 auto;
 }
 
 
 .new_slider_mob_for_item {
-    width: 90px !important;
+    width: 100px !important;
     display: block !important;
     margin: 0px 20px;
 }
